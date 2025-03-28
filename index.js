@@ -1,3 +1,4 @@
+
 const express = require("express");
 const cors = require("cors");
 
@@ -8,7 +9,7 @@ app.use(express.json());
 let items = []; // Simple in-memory storage
 
 // GET all items
-app.get("/items", (req, res) => { 
+app.get("/items", (req, res) => {
     res.json(items);
 });
 
@@ -37,5 +38,5 @@ app.delete("/items/:id", (req, res) => {
 });
 
 // Start the server
-const PORT = 3000;
+const PORT = 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
